@@ -1,0 +1,39 @@
+{
+  "providers": {
+    "openai-codex": {
+      "baseUrl": "https://chatgpt.com/backend-api",
+      "api": "openai-codex-responses",
+      "models": []
+    },
+    "lm-studio": {
+      "baseUrl": "http://127.0.0.1:18790/v1",
+      "apiKey": "lmstudio",
+      "auth": "api-key",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "qwen3-coder-next-mlx-8bit",
+          "name": "Qwen3 Coder Next MLX 8bit",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 262144,
+          "maxTokens": 32768,
+          "compat": {
+            "supportsStore": false,
+            "supportsTools": true,
+            "supportsStrictMode": false,
+            "supportsDeveloperRole": false
+          }
+        }
+      ]
+    }
+  }
+}

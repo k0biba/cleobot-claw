@@ -1,0 +1,42 @@
+# === Secrets & Credentials ===
+credentials/
+telegram/
+identity/
+agents/main/agent/auth-profiles.json
+openclaw.json
+openclaw.json.bak*
+workspace/.generated-*
+
+# === Runtime State ===
+memory/main.sqlite
+cron/runs/
+cron/jobs.json.bak
+logs/
+delivery-queue/
+update-check.json
+devices/
+workspace/.openclaw/
+workspace/.clawhub/
+workspace/memory/heartbeat-state.json
+workspace/skills/*/.state/
+
+# === Session Logs & Media (large/private) ===
+agents/main/sessions/
+media/
+
+# === Libraries & Build Artifacts ===
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+package-lock.json
+
+# === OS / Editor ===
+.DS_Store
+
+# === Temp Files ===
+workspace/.tmp-*
+
+# === Tools runtime ===
+workspace/tools/*.log
+workspace/tools/*.plist

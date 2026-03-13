@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.state.json
+*.wav
+*.mp3
+*.tmp

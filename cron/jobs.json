@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "3fb8fa95-5c9d-4e40-a92c-010f150c1acc",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-36950819-4efc-4af5-b048-198cc84b089f",
+      "name": "morgen-briefing",
+      "enabled": true,
+      "createdAtMs": 1773358489737,
+      "updatedAtMs": 1773471330000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "tz": "Europe/Berlin"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Erstelle das Tages-Briefing. Nutze den briefing-Skill."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "8534441779",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1773471600000,
+        "lastRunAtMs": 1773385200021,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 22445,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}
