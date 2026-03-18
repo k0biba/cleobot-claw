@@ -334,6 +334,9 @@ async function connectLoop() {
 
     ws.addEventListener('error', (err) => {
       console.error('[led-matrix-bridge] websocket error:', err?.message || err);
+      // Node.js WebSocket may not fire 'close' after a connection error.
+      // Force-close so the close handler can schedule a reconnect.
+      try { ws?.close(); } catch {}
     });
   } catch (err) {
     console.error('[led-matrix-bridge] connect loop failed:', err?.message || err);
