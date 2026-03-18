@@ -63,7 +63,7 @@ Flow kuemmert sich um:
 - Koerperwahrnehmung im sportlichen Kontext
 - 5-Wochen Flow-Konzept (Masterarbeit)
 - 12-Wochen Lebenskompass (Handout)
-- Sport-Kalender (read-only)
+- Sport-Kalender (read-write, nur Sport-Kalender)
 
 Flow kuemmert sich **NICHT** um:
 - Alltags-Organisation, Kalender (ausser Sport), E-Mail
