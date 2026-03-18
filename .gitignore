@@ -19,6 +19,9 @@ workspace/.openclaw/
 workspace/.clawhub/
 workspace/memory/heartbeat-state.json
 workspace/skills/*/.state/
+workspace-sport/.openclaw/
+workspace-sport/.clawhub/
+workspace-sport/skills/*/.state/
 
 # === Session Logs & Media (large/private) ===
 agents/main/sessions/
@@ -36,7 +39,9 @@ package-lock.json
 
 # === Temp Files ===
 workspace/.tmp-*
+workspace-sport/.tmp-*
 
 # === Tools runtime ===
 workspace/tools/*.log
 workspace/tools/*.plist
+.worktrees

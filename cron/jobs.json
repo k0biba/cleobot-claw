@@ -8,7 +8,7 @@
       "name": "morgen-briefing",
       "enabled": true,
       "createdAtMs": 1773358489737,
-      "updatedAtMs": 1773471330000,
+      "updatedAtMs": 1773817225581,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -27,12 +27,69 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1773471600000,
-        "lastRunAtMs": 1773385200021,
+        "nextRunAtMs": 1773903600000,
+        "lastRunAtMs": 1773817200014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 22445,
-        "lastDeliveryStatus": "not-requested",
+        "lastDurationMs": 25567,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
+      }
+    },
+    {
+      "id": "a1b2c3d4-sport-weekly-review",
+      "agentId": "sport",
+      "name": "sport-weekly-review",
+      "enabled": false,
+      "createdAtMs": 1710763200000,
+      "updatedAtMs": 1710763200000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 18 * * 0",
+        "tz": "Europe/Berlin"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Woechentlicher Rueckblick. Starte Protokoll: Weekly Review. Fasse die Woche zusammen, erkenne Muster, biete eine tiefere Uebung an, leite die naechste Woche ein. Aktualisiere danach exports/ fuer die Cleo-Bridge."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram-sport",
+        "to": "8534441779",
+        "bestEffort": true
+      },
+      "state": {
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "e5f6g7h8-sport-theory-input",
+      "agentId": "sport",
+      "name": "sport-theory-input",
+      "enabled": false,
+      "createdAtMs": 1710763200000,
+      "updatedAtMs": 1710763200000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "tz": "Europe/Berlin"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Montag-Theorie-Input. Lies den aktuellen Programmstatus (user_data/program_state.md) und gib einen kurzen Theorie-Input fuer die aktuelle Woche. Max 5-8 Saetze. Keine Ueberforderung am Montagmorgen."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram-sport",
+        "to": "8534441779",
+        "bestEffort": true
+      },
+      "state": {
         "consecutiveErrors": 0
       }
     }
