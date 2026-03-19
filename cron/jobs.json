@@ -8,7 +8,7 @@
       "name": "morgen-briefing",
       "enabled": true,
       "createdAtMs": 1773358489737,
-      "updatedAtMs": 1773817225581,
+      "updatedAtMs": 1773903620972,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -27,11 +27,11 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1773903600000,
-        "lastRunAtMs": 1773817200014,
+        "nextRunAtMs": 1773990000000,
+        "lastRunAtMs": 1773903600013,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 25567,
+        "lastDurationMs": 20959,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true

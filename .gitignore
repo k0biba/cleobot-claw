@@ -2,7 +2,7 @@
 credentials/
 telegram/
 identity/
-agents/main/agent/auth-profiles.json
+agents/*/agent/
 openclaw.json
 openclaw.json.bak*
 workspace/.generated-*
@@ -24,8 +24,11 @@ workspace-sport/.clawhub/
 workspace-sport/skills/*/.state/
 
 # === Session Logs & Media (large/private) ===
-agents/main/sessions/
+agents/*/sessions/
 media/
+
+# === Framework-generated workspaces ===
+workspace-default/
 
 # === Libraries & Build Artifacts ===
 .venv/
